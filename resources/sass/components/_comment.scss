@@ -1,0 +1,29 @@
+.comments {
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+}
+.comment {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: $color-secondary;
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__user-image-wrapper {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+        background: lightgrey;
+    }
+    &__user-image {
+        width: auto;
+        height: 100%;
+    }
+}

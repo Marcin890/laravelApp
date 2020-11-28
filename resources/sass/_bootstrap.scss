@@ -1,0 +1,20 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: $color-primary;
+}
+.btn {
+    border: none;
+}
+
+.btn-primary {
+    background: $color-link;
+}
+.dropdown-menu {
+    background: $color-third;
+
+    .dropdown-item {
+        color: white;
+        &:hover {
+            background: $color-link;
+        }
+    }
+}

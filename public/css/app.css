@@ -1,0 +1,187 @@
+body {
+  font-family: "Asap", sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.btn {
+  border: none;
+}
+
+.btn-primary {
+  background: #e94560;
+}
+
+.dropdown-menu {
+  background: #0f3460;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #e94560;
+}
+
+body {
+  background: #1a1a2e;
+  color: white;
+}
+
+.navbar-dark {
+  background: #0f3460;
+}
+
+.img-full {
+  width: 100%;
+}
+
+a {
+  color: #e94560;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.primary-color {
+  color: #e94560 !important;
+}
+
+button {
+  color: white;
+}
+
+a.btn {
+  color: white;
+}
+
+.control-label {
+  margin-top: 20px;
+}
+
+.mem {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: #16213e;
+  margin-top: 20px;
+}
+
+.mem__title-link {
+  color: white;
+}
+
+.mem__user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mem__user-image-wrapper {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: lightgrey;
+}
+
+.mem__user-image-wrapper--profile {
+  width: 120px;
+  height: 120px;
+}
+
+.mem__user-image {
+  width: auto;
+  height: 100%;
+}
+
+.mem__user-name {
+  font-size: 1.25rem;
+}
+
+.mem__likes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.mem__publish {
+  margin-top: 30px;
+}
+
+.mem__publish a {
+  color: white;
+}
+
+.mem__status {
+  padding: 10px 20px;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.mem__status--publish {
+  background: green;
+}
+
+.mem__status--unpublish {
+  background: red;
+}
+
+.page-link {
+  background: #0f3460;
+  border: none;
+  color: white;
+}
+
+.page-item.disabled .page-link {
+  background: #0f3460;
+}
+
+.page-item.active .page-link {
+  background: #e94560;
+}
+
+.comments__title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.comment {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #16213e;
+}
+
+.comment__user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.comment__user-image-wrapper {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: lightgrey;
+}
+
+.comment__user-image {
+  width: auto;
+  height: 100%;
+}
+
+.category__title {
+  margin-bottom: 20px;
+}
+
+.category__link {
+  margin-bottom: 20px;
+}
+

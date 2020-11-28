@@ -1,0 +1,16 @@
+.page-link {
+    background: $color-third;
+    border: none;
+    color: $color-primary;
+}
+
+.page-item.disabled {
+    .page-link {
+        background: $color-third;
+    }
+}
+.page-item.active {
+    .page-link {
+        background: $color-link;
+    }
+}

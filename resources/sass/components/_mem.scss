@@ -1,0 +1,64 @@
+.mem {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: $color-secondary;
+    margin-top: 20px;
+    &__title-link {
+        color: $color-primary;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__user-image-wrapper {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+        background: lightgrey;
+        &--profile {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    &__user-image {
+        width: auto;
+        height: 100%;
+    }
+
+    &__user-name {
+        font-size: 1.25rem;
+    }
+
+    &__likes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    &__publish {
+        margin-top: 30px;
+        a {
+            color: white;
+        }
+    }
+    &__status {
+        padding: 10px 20px;
+        border-radius: 0px;
+        margin-top: 20px;
+        &--publish {
+            background: green;
+        }
+        &--unpublish {
+            background: red;
+        }
+    }
+    &__likes-count {
+    }
+    &__likes-button {
+    }
+}
