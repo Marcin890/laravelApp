@@ -2,11 +2,12 @@
 namespace App\memApp\Repositories; 
 use App\{Mem, Like, Comment, Category, User}; 
 use App\memApp\Interfaces\FrontendRepositoryInterface; 
+use Illuminate\Support\Facades\Cache;
 
-class FrontendRepository implements FrontendRepositoryInterface {
+class CachedFrontendRepository extends FrontendRepository implements FrontendRepositoryInterface {
     public function getAllMems()
     {
-
+       
         return Mem::where([
             ['published', true]            
             ] )->with(['user', 'likes.user', 'category', 'photos' ])->orderByDesc('updated_at')->paginate(8);

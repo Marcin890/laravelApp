@@ -54,16 +54,9 @@
           <div class="mem__likes-count">
             Likes: {{ $mem->likes->count  () }}
         </div>
-         
     </div> 
-    
-
-
 </div>
 @endforeach
-
-
-
 
 <div class="row">
     <div class="col-sm-12">{{$mems->links()}}</div>

@@ -10,6 +10,8 @@ class BackendRepository {
         
         $this->validate($request, [
             'title'=>"string|required",
+            'category'=>"string|required",
+            
         ]); 
         
         $mem = new Mem;  
@@ -94,7 +96,7 @@ class BackendRepository {
         {
             
             $this->validate($request,[
-                'userPicture'=>"image|max:1000",             
+                'userPicture'=>"image|max:3000",             
             ]);
         }
 

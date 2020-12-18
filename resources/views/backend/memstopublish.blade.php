@@ -9,7 +9,7 @@
     <div class="mem__user">
         <div class="mem__user-image-wrapper">
             <a href="{{ route('memsbyuser', ['id'=>$mem->user->id]) }}">
-                <img class="mem__user-image" src="{{ $mem->user->photos->first()->path ?? $user_placeholder }}" alt="">
+                <img class="mem__user-image" src="{{ $mem->user->photos->first()->path ?? null}}" alt="">
             </a>   
         </div>
         <div class="mem__user-name">

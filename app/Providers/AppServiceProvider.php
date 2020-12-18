@@ -15,7 +15,31 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if (App::environment('local'))
+        {
+                        
+            $this->app->bind(\App\memApp\Interfaces\FrontendRepositoryInterface::class,function()
+            {            
+                return new \App\memApp\Repositories\FrontendRepository;
+            });
+  
+        }
+        else
+        {
+            
+            $this->app->bind(\App\memApp\Interfaces\FrontendRepositoryInterface::class,function()
+            {            
+                return new \App\memApp\Repositories\CachedFrontendRepository;
+            });  
+
+        }
+
+        $this->app->bind(\App\memApp\Interfaces\FrontendRepositoryInterface::class,function()
+        {            
+            return new \App\memApp\Repositories\FrontendRepository;
+        });
+
+        
     }
 
     /**

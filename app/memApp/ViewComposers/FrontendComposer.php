@@ -25,7 +25,7 @@ class FrontendComposer
 
          
 
-        $popularmems = Mem::withCount('likes')->orderByDesc('likes_count')->take(5)->get();
+        $popularmems = Mem::where('published', true)->withCount('likes')->orderByDesc('likes_count')->take(5)->get();
 
         $view->with('popularmems', $popularmems);
     }
